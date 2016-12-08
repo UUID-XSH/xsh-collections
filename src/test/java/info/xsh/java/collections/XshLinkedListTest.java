@@ -8,7 +8,7 @@ import org.junit.Test;
 public class XshLinkedListTest {
     @Test
     public void addTest() {
-        XshList<String> list = new XshLinkedList<>();
+        List<String> list = new LinkedList<>();
         list.addLast("one");
         list.addLast("two");
         list.addLast("three");

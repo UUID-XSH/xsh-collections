@@ -3,7 +3,7 @@ package info.xsh.java.collections;
 /**
  * Created by xiaohuo on 16/12/6.
  */
-public interface XshList<Item> {
+public interface List<Item> {
     void addFirst(Item item);
     void addLast(Item item);
     Item removeFirst();

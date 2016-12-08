@@ -3,7 +3,7 @@ package info.xsh.java.collections;
 /**
  * Created by xiaohuo on 16/12/6.
  */
-public class XshLinkedList<T> implements XshList<T> {
+public class LinkedList<T> implements List<T> {
 
     private Node<T> first;
     private Node<T> last;
@@ -113,7 +113,7 @@ public class XshLinkedList<T> implements XshList<T> {
 
 
     public static void main(String[] args) {
-        XshLinkedList<String> list = new XshLinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
         list.addLast("one");
         list.addLast("two");
         list.addLast("three");

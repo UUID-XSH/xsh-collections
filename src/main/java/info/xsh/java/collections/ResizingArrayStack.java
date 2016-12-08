@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Created by xiaohuo on 16/12/6.
  */
-public class XshResizingArrayStack<Item> implements Iterable<Item> {
+public class ResizingArrayStack<Item> implements Iterable<Item> {
     private Item[] items = (Item[]) new Object[1];  //items
     private int N = 0; //   numbers of items
 
