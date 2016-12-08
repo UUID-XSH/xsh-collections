@@ -1,5 +1,6 @@
 package info.xsh.java.collections;
 
+import info.xsh.java.util.Iterator;
 import org.junit.Test;
 
 /**
@@ -12,5 +13,9 @@ public class XshLinkedListTest {
         list.addLast("one");
         list.addLast("two");
         list.addLast("three");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }

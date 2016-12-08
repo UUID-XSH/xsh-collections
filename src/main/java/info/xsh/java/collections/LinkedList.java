@@ -1,5 +1,7 @@
 package info.xsh.java.collections;
 
+import info.xsh.java.util.Iterator;
+
 /**
  * Created by xiaohuo on 16/12/6.
  */
@@ -89,6 +91,22 @@ public class LinkedList<T> implements List<T> {
         return length == 0;
     }
 
+    @Override public Iterator<T> iterator() {
+        return new Iterator<T>() {
+            Node<T> cursor = first;
+
+            @Override public T next() {
+                T node = cursor.getItem();
+                cursor = cursor.next;
+                return node;
+            }
+
+            @Override public boolean hasNext() {
+                return cursor != null;
+            }
+        };
+    }
+
     private class Node<Item> {
         Item item;
         Node<Item> next;
@@ -129,7 +147,6 @@ public class LinkedList<T> implements List<T> {
         System.out.println(list.removeLast());
         System.out.println(list.removeLast());
         System.out.println(list.removeLast());
-
 
 
     }

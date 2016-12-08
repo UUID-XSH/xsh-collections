@@ -1,9 +1,11 @@
 package info.xsh.java.collections;
 
+import info.xsh.java.util.Iterable;
+
 /**
  * Created by xiaohuo on 16/12/6.
  */
-public interface List<Item> {
+public interface List<Item> extends Iterable<Item>{
     void addFirst(Item item);
     void addLast(Item item);
     Item removeFirst();
