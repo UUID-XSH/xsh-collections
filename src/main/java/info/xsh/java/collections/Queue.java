@@ -26,13 +26,4 @@ public class Queue<Item> {
         return items.size();
     }
 
-    public static void main(String[] args) {
-        Queue<String> queue = new Queue<>();
-        queue.enqueue("one");
-        queue.enqueue("two");
-        queue.enqueue("three");
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-    }
 }
