@@ -128,27 +128,4 @@ public class LinkedList<T> implements List<T> {
             this.item = item;
         }
     }
-
-
-    public static void main(String[] args) {
-        LinkedList<String> list = new LinkedList<>();
-        list.addLast("one");
-        list.addLast("two");
-        list.addLast("three");
-        System.out.println(list.length);
-        System.out.println(list.remove());
-        System.out.println(list.remove());
-        System.out.println(list.remove());
-        System.out.println("--------------------");
-        list.add("one");
-        list.add("two");
-        list.add("three");
-        System.out.println(list.length);
-        System.out.println(list.removeLast());
-        System.out.println(list.removeLast());
-        System.out.println(list.removeLast());
-
-
-    }
-
 }
